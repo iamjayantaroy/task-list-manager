@@ -1,38 +1,151 @@
+/* General container styling */
 .App {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f8f9fc;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #4e73df;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+.task-form {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input and Select Field Styling */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background-color: #4e73df;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #365cc7;
+  transform: scale(1.05);
+}
+
+/* Styling the Filter Section */
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter label {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.filter select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 200px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter select:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 5px rgba(78, 115, 223, 0.5);
+}
+
+/* Tabulator Table Styling */
+.tabulator {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tabulator-header {
+  background-color: #f1f1f1;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tabulator-row {
+  border-bottom: 1px solid #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tabulator-row:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tabulator-cell {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.tabulator-button {
+  background-color: #e74a3b;
   color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabulator-button:hover {
+  background-color: #c0392b;
 }
